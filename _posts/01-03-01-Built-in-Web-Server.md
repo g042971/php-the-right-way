@@ -1,15 +1,16 @@
 ---
-title: Built-in Web Server
+title: 內建的網頁伺服器
 isChild: true
 anchor: builtin_web_server
 ---
 
-## Built-in web server {#builtin_web_server_title}
+## 內建的網站伺服器 {#builtin_web_server_title}
 
-With PHP 5.4 or newer, you can start learning PHP without installing and configuring a full-fledged web server. To start the server, run the following command from your terminal in your project's web root:
+PHP 5.4 之後，你可以開始學習 PHP 而不需要安裝與設定一個完整的網頁伺服器。要啟動內建伺服器，從終端機進入專案的 Web 根目錄下，執行下面的指令：
+
 
     > php -S localhost:8000
 
-* [Learn about the built-in, command line web server][cli-server]
+* [瞭解更多內建的命令列伺服器][cli-server]
 
 [cli-server]: http://www.php.net/manual/en/features.commandline.webserver.php
