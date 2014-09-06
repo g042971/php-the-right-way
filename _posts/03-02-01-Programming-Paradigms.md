@@ -3,50 +3,43 @@ isChild: true
 anchor: programming_paradigms
 ---
 
-## Programming Paradigms {#programming_paradigms_title}
+## 編程範式 {#programming_paradigms_title}
 
-PHP is a flexible, dynamic language that supports a variety of programming techniques. It has evolved dramatically over
-the years, notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in PHP 5.3 
-(2009), and traits in PHP 5.4 (2012). 
+PHP 是一個彈性的動態語言，支援多種編程技術。這幾年一直不斷的進化，重要的里程碑包含 PHP 5.0 (2004) 增加完善的物件導向模型，PHP 5.3 (2009) 增加匿名函式與命名空間以及 PHP 5.4 (2012) 增加的 traits。
 
-### Object-oriented Programming
 
-PHP has a very complete set of object-oriented programming features including support for classes, abstract classes,
-interfaces, inheritance, constructors, cloning, exceptions, and more.
+### 物件導向編程
 
-* [Read about Object-oriented PHP][oop]
-* [Read about Traits][traits]
+PHP 擁有完整的物件導向編程的特性，包含支援類別、抽象類別、介面、繼承、構造函數、克隆和異常等。
 
-### Functional Programming
 
-PHP supports first-class function, meaning that a function can be assigned to a variable. Both user-defined and built-in
-functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to other
-functions (feature called Higher-order functions) and function can return other functions.
+* [閱讀 PHP 物件導向][oop]
+* [閱讀 Traits][traits]
 
-Recursion, a feature that allows a function to call itself, is supported by the language, but most of the PHP code focus
-on iteration.
+### 函式編程
 
-New anonymous functions (with support for closures) are present since PHP 5.3 (2009).
+PHP 支持第一類函式（first-class function），即函式可以被賦值給一個變數，包括使用者自定義或者是內建函式，然後動態調用它。函式可以作為參數傳遞給其他函式（稱作高階函數），也可以做完函數返回值返回。
 
-PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
-can be used interchangeably with anonymous functions in almost all cases.
+PHP 支援遞迴，也就是函式可以呼叫自己，但多數 PHP 程式碼較常使用迭代。
 
-* Continue reading on [Functional Programming in PHP](/pages/Functional-Programming.html)
-* [Read about Anonymous Functions][anonymous-functions]
-* [Read about the Closure class][closure-class]
-* [More details in the Closures RFC][closures-rfc]
-* [Read about Callables][callables]
-* [Read about dynamically invoking functions with `call_user_func_array`][call-user-func-array]
+自從 PHP 5.3 (2009) 之後開始引入支援閉包匿名函式。
 
-### Meta Programming
+PHP 5.4 支援將閉包綁定到物件的作用域中，並改善其可調用性，如此即可在大部分狀況下使用匿名函式取代一般函式。
 
-PHP supports various forms of meta-programming through mechanisms like the Reflection API and Magic Methods. There are
-many Magic Methods available like `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, etc. that allow
-developers to hook into class behavior. Ruby developers often say that PHP is lacking `method_missing`, but it is
-available as `__call()` and `__callStatic()`.
 
-* [Read about Magic Methods][magic-methods]
-* [Read about Reflection][reflection]
+* 學習更多 [PHP 函式編程](/pages/Functional-Programming.html)
+* [閱讀匿名函式][anonymous-functions]
+* [閱讀閉包類別][closure-class]
+* [更多關於 Closures RFC][closures-rfc]
+* [閱讀 Callables][callables]
+* [閱讀動態調用函式 `call_user_func_array`][call-user-func-array]
+
+### 元編程
+
+PHP 通過反射 API 和魔術方法機制，支援多種方式的元編程。開發者通過魔術方法，如 `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, 等等，可以改變類別的行為。Ruby 開發者經常說 PHP 沒有 `method_missing` 方法，實際上通過 `__call()` 和 `__callStatic()` 就可以完成相同的功能。
+
+* [閱讀魔術方法][magic-methods]
+* [閱讀反射][reflection]
 
 [namespaces]: http://php.net/manual/en/language.namespaces.php
 [overloading]: http://php.net/manual/en/language.oop5.overloading.php

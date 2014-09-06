@@ -1,13 +1,13 @@
 ---
-title:   Standard PHP Library
+title:   標準 PHP 函式庫
 isChild: true
 anchor: standard_php_library
 ---
 
-## Standard PHP Library {#standard_php_library_title}
+## 標準 PHP 函式庫 {#standard_php_library_title}
 
-The Standard PHP Library (SPL) is packaged with PHP and provides a collection of classes and interfaces. It is made up primarily of commonly needed datastructure classes (stack, queue, heap, and so on), and iterators which can traverse over these datastructures or your own classes which implement SPL interfaces.
+標準 PHP 函式庫（SPL）隨著 PHP 一起發佈，提供了一組類別和介面。包含了常用的資料結構類別（堆疊、佇列、堆積等等），以及遊走這些資料結構的迭代器，或者你可以自己實作 SPL 介面。
 
-* [Read about the SPL][spl]
+* [閱讀 SPL][spl]
 
 [spl]: http://php.net/manual/en/book.spl.php 
