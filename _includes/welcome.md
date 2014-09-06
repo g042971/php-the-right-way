@@ -1,24 +1,19 @@
-# Welcome
+# 歡迎
 
-There's a lot of outdated information on the Web that leads new PHP users astray,
-propagating bad practices and insecure code. _PHP: The Right Way_ is an easy-to-read,
-quick reference for PHP popular coding standards, links to authoritative tutorials
-around the Web and what the contributors consider to be best practices at the present
-time.
+目前網路上充斥著大量的過時信息，讓 PHP 新手誤入歧途，並且傳播著錯誤的實踐方法與不安全的代碼。
+_PHP 之道_ 是一個快速易讀的指南，包含 PHP 熱門編碼標準、連結網路上權威教程和現時貢獻者認定的最佳實踐方法。
 
-_There is no canonical way to use PHP_. This website aims to introduce new PHP
-developers to some topics which they may not discover until it is too late, and aims
-to give seasoned pros some fresh ideas on those topics they've been doing for years
-without ever reconsidering. This website will also not tell you which tools to use, but
-instead offer suggestions for multiple options, when possible explaining the differences
-in approach and use-case.
+_使用 PHP 沒有規範化的方式_。本網站主要是協助 PHP 新手在他們沒有發現或者是太晚發現的主題，
+或是經驗豐富的專業人士已經積習已久的做法提供一些新想法。
+本網站也不會告訴您應該使用什麼樣的工具，而是提供多種選擇的建議，並盡可能地說明方法及用法上的差異。
 
-This is a living document and will continue to be updated with more helpful information
-and examples as they become available.
 
-## Translations
+當有更多有用的資訊以及範例時，此文件會隨著相關技術發展持續更新。
 
-_PHP: The Right Way_ is (or soon will be) translated into many different languages:
+
+## 翻譯
+
+_PHP 之道_ 已經（或即將）翻譯成多種語言：
 
 * [English](http://www.phptherightway.com)
 * [Chinese (Simplified)](http://wulijun.github.com/php-the-right-way)
@@ -39,16 +34,15 @@ _PHP: The Right Way_ is (or soon will be) translated into many different languag
 * [Turkish](http://hkulekci.github.io/php-the-right-way/)
 * [Slovenian](http://sl.phptherightway.com)
 
-## How to Contribute
+## 如何貢獻
 
-Help make this website the best resource for new PHP programmers! [Contribute on GitHub][1]
+幫助我們讓本網站作為 PHP 新手的最佳資源！[在 GitHub 上貢獻][1]
 
 ## Spread the Word!
 
-_PHP: The Right Way_ has web banner images you can use on your website. Show your support, and let new PHP developers
-know where to find good information!
+您可以在網站上放置 PHP 之道 的廣告橫幅。謝謝您的支持，並讓 PHP 新手能夠知道哪裡可以找到好的資訊！
 
-[See Banner Images][2]
+[廣告橫幅][2]
 
 [1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
 [2]: /banners.html
