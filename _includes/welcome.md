@@ -16,23 +16,23 @@ _使用 PHP 沒有規範化的方式_。本網站主要是協助 PHP 新手在�
 _PHP 之道_ 已經（或即將）翻譯成多種語言：
 
 * [English](http://www.phptherightway.com)
+* [Bulgarian](http://bg.phptherightway.com/)
 * [Chinese (Simplified)](http://wulijun.github.com/php-the-right-way)
 * [French](http://eilgin.github.io/php-the-right-way/)
-* [Japanese](http://ja.phptherightway.com)
-* [Korean](http://wafe.github.io/php-the-right-way/)
+* [German](http://rwetzlmayr.github.io/php-the-right-way/)
 * [Indonesian](http://id.phptherightway.com/)
 * [Italian](http://it.phptherightway.com/)
+* [Japanese](http://ja.phptherightway.com)
+* [Korean](http://wafe.github.io/php-the-right-way/)
 * [Polish](http://pl.phptherightway.com/)
 * [Portuguese](http://br.phptherightway.com/)
 * [Romanian](https://bgui.github.io/php-the-right-way/)
 * [Russian](http://getjump.github.io/ru-php-the-right-way)
+* [Slovenian](http://sl.phptherightway.com)
 * [Spanish](http://phpdevenezuela.github.io/php-the-right-way/)
-* [Ukrainian](http://iflista.github.com/php-the-right-way/)
-* [Bulgarian](http://bg.phptherightway.com/)
-* [German](http://rwetzlmayr.github.io/php-the-right-way/)
 * [Thai](https://apzentral.github.io/php-the-right-way/)
 * [Turkish](http://hkulekci.github.io/php-the-right-way/)
-* [Slovenian](http://sl.phptherightway.com)
+* [Ukrainian](http://iflista.github.com/php-the-right-way/)
 
 ## 如何貢獻
 
