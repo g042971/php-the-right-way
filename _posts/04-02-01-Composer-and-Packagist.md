@@ -3,81 +3,82 @@ isChild: true
 anchor: composer_and_packagist
 ---
 
-## Composer and Packagist {#composer_and_packagist_title}
+## Composer 與 Packagist {#composer_and_packagist_title}
 
-Composer is a **brilliant** dependency manager for PHP. List your project's dependencies in a `composer.json` file and, with a few simple commands, Composer will automatically download your project's dependencies and setup autoloading for you.
+Composer 是一個**杰出** 的PHP套件管理程式. 在`composer.json`檔案中寫入你專案所要使用的套件在打上一點簡單的指令, Composer將會自動幫你下載並設定你專案中所需要的套件.
 
-There are already a lot of PHP libraries that are compatible with Composer, ready to be used in your project. These "packages" are listed on [Packagist][1], the official repository for Composer-compatible PHP libraries.
+現在已經有許多PHP函式庫相容於Composer,並且隨時都可以在你的專案中使用.這些"packages(套件)"都會列在[Packagist][1],這是一個官方的Composer相容的套件倉庫.
 
-### How to Install Composer
+### 如何安裝 Composer
 
-You can install Composer locally (in your current working directory; though this is no longer recommended) or globally (e.g. /usr/local/bin). Let's assume you want to install Composer locally. From your project's root directory:
+你可以區域性的安裝Composer(在你目前工作的目錄;這裡不是很推薦)或是全域(e.g. /usr/local/bin).我們假設你想安裝區域的Composer.從你專案的根目錄輸入:
 
     curl -s https://getcomposer.org/installer | php
 
-This will download `composer.phar` (a PHP binary archive). You can run this with `php` to manage your project dependencies. <strong>Please Note:</strong> If you pipe downloaded code directly into an interpreter, please read the code online first to confirm it is safe.
+這串指令將會下載`composer.phar`(一個PHP執行檔). 你可以使用 `php` 執行這個檔案用來管理你的專案套件.
+<strong>註記:</strong>假如你是直接下載程式來編譯,請先確認你下載編譯的檔案是否安全
 
-#### Installing on Windows
-For Windows users the easiest way to get up and running is to use the [ComposerSetup][6] installer, which performs a global install and sets up your `$PATH` so that you can just call `composer` from any directory in your command line.
+#### Windows環境下安裝
 
-### How to Install Composer (manually)
+對於Windows的使用者而言最簡單取得及執行的方法就是使用[ComposerSetup][6]安裝檔, 安裝檔會提供全域性的composer及設定你的 `$PATH` ，所以你可以直接在命令視窗中的任何目錄下使用 `composer`.
 
-Manually installing Composer is an advanced technique; however, there are various reasons why a developer might prefer this method vs. using the interactive installation routine. The interactive installation checks your PHP installation to ensure that:
+### 如何安裝Composer(手動)
 
-- a sufficient version of PHP is being used
-- `.phar` files can be executed correctly
-- certain directory permissions are sufficient
-- certain problematic extensions are not loaded
-- certain `php.ini` settings are set
+要手動安裝Composer是一件較進階的技術;僅管如此還是有許多開發者有各種原因喜歡使用這種互動式的應用程式安裝Composer. 在安裝前請先確認你的PHP安裝項目如下：
 
-Since a manual installation performs none of these checks, you have to decide whether the trade-off is worth it for you. As such, below is how to obtain Composer manually:
+- 符合滿足Composer要求或以上的PHP版本
+- `.phar` 類型檔案可以正確的被執行
+- 相關的目錄權限有開放
+- 相關有問題的擴展套件沒有被讀取
+- 相關的 `php.ini` 設定已完成
+
+由於手動安裝沒有做這些檢查,你必須自已衡量決定是否值得做這些事，以下是如何取得Composer手動安裝：
 
     curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
     chmod +x $HOME/local/bin/composer
 
-The path `$HOME/local/bin` (or a directory of your choice) should be in your `$PATH` environment variable. This will result in a `composer` command being available.
+路徑 `$HOME/local/bin` (或是你選擇的路徑) 應該在你的 `$PATH` 環境變數中. 這將會影響 `composer` 這個指令是否有效.
 
-When you come across documentation that states to run Composer as `php composer.phar install`, you can substitute that with:
+當你已經安裝到文件叫你執行Composer指令是 `php composer.phar install`時，你可以使用下列指令替代:
 
     composer install
-    
-This section will assume you have installed composer globally.
 
-### How to Define and Install Dependencies
+本章節我們假設你已經全域性的安裝Composer.
 
-Composer keeps track of your project's dependencies in a file called `composer.json`. You can manage it by hand if you like, or use Composer itself. The `composer require` command adds a project dependency and if you don't have a `composer.json` file, one will be created. Here's an example that adds [Twig][2] as a dependency of your project.
+### 如何設定及安裝獨立套件
+
+Composer會持續的追縱你專案的獨立套件透過一個叫`composer.json`的檔案. 如果你希望你可以自已管理這個檔案.或是使用Composer它他自已會管理.  `composer require` 這個指令會新增一個專案獨立套件進去且如果你沒有`composer.json`這個檔案他會直接建立.這裡有個範例是為你的專案加入[Twig][2]這個獨立套件.
 
 	composer require twig/twig:~1.8
 
-Alternatively the `composer init` command will guide you through creating a full `composer.json` file for your project. Either way, once you've created your `composer.json` file you can tell Composer to download and install your dependencies into the `vendors/` directory. This also applies to projects you've downloaded that already provide a `composer.json` file:
+另外 `composer init` 這個指令將會指引你建立一個完整的 `composer.json` 檔案在你的專案之中.無論你使用哪種方式當你已經建立你的 `composer.json` 檔案,你可以告訴Composer去下載及安裝你的獨立套件進 `vendors/` 目錄中. 這這指令也適用於所有你已經下載並已經提供一個 `composer.json` 的專案：
 
     composer install
 
-Next, add this line to your application's primary PHP file; this will tell PHP to use Composer's autoloader for your project dependencies.
+接下來,新增這一行到你的應用程式中主要PHP檔案;這將會告訴PHP使用Composer的自動讀取器並在你的專案中使用獨立套件.
 
 {% highlight php %}
 <?php
 require 'vendor/autoload.php';
 {% endhighlight %}
 
-Now you can use your project dependencies, and they'll be autoloaded on demand.
+現在你可以使用你專案中的獨立套件且它們會自動完成讀取的動作.
 
-### Updating your dependencies
+### 更新你的獨立套件
 
-Composer creates a file called `composer.lock` which stores the exact version of each package it downloaded when you first ran `php composer.phar install`. If you share your project with other coders and the `composer.lock` file is part of your distribution, when they run `php composer.phar install` they'll get the same versions as you. To update your dependencies, run `php composer.phar update`.
+Composer會建立一個檔案叫 `composer.lock` 並存放每個套件實際下載的版本編號當你第一次執行 `php composer.phar install` 時. 假如你要分享你的專案給其他開發者.  當`composer.lock`這個檔案也在你分享的檔案之中的話. 當別的開發者執行 `php composer.phar install` 這個指令時他們將會得到與你相同一樣的版本套件. 當你要更新你的獨立套件時請執行 `php composer.phar update`.
 
-This is most useful when you define your version requirements flexibly. For instance a version requirement of ~1.8  means "anything newer than 1.8.0, but less than 2.0.x-dev". You can also use the `*` wildcard as in `1.8.*`. Now Composer's `php composer.phar update` command will upgrade all your dependencies to the newest version that fits the restrictions you define.
+這是最有用且當你需要靈活的定義你所需要的套件版本. 舉例來說一個版本定義為 ~1.8 時他的意思為"任何比1.8.0新的版本, 但小於 2.0.x-dev". 你也可以使用 `*` 這個符號在 `1.8.*`之中. 現在Composer在更新時將會升級你的獨立套件至最新符合你所限制的版本.
 
-### Update Notifications
+### 更新通知
 
-To receive notifications about new version releases you can sign up for [VersionEye][3], a web service that can monitor 
-your GitHub and BitBucket accounts for `composer.json` files and send emails with new package releases.
+要接收關於新版本的更新通知.你可以註冊[VersionEye][3], 這是一個網頁服務可以監控你的Github及BitBucket帳號中的 `composer.json` 檔案並且當有新套件更新時會寄email給你.
 
-### Checking your dependencies for security issues
+### 確認你的獨立套件資安議題
 
-The [Security Advisories Checker][4] is a web service and a command-line tool, both will examine your `composer.lock` file and tell you if you need to update any of your dependencies.
+[Security Advisories Checker][4]是一個網頁服務及一個指令工具二者都會檢查你的`composer.lock`檔案且告訴你假如你需要更新任何獨立套件.
 
-* [Learn about Composer][5]
+* [其他學習Composer相關資源][5]
 
 [1]: http://packagist.org/
 [2]: http://twig.sensiolabs.org
