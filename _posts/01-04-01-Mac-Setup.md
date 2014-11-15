@@ -13,9 +13,9 @@ OSX 會預載 PHP 在系統中，但版本略舊於最新的穩定版本。Lion 
 
 [Homebrew](http://brew.sh/) 是一個強大的 OS X 專用套件管理系統，它可以讓您輕鬆地安裝 PHP 和各種擴充套件(extensions)。
 
-[Homebrew PHP] 是一個包含與PHP相關的Formulae，能讓您透過 homebrew 安裝PHP。也就是說，你可以透過 `brew install`指令，安裝「php53」、「php54」、「php55」、或「php56」，並且透過修改你的路徑（ PATH ）變數去切換各種版本。
+[Homebrew PHP] 是一個包含與PHP相關的Formulae，能讓您透過 homebrew 安裝PHP。也就是說，你可以透過 `brew install`指令，安裝 `php53`、`php54`、`php55`、或 `php56`，並且透過修改你的路徑 `PATH` 變數去切換各種版本。
 
-### 透過phpbrew 安裝 PHP
+### 透過 phpbrew 安裝 PHP
 
 [phpbrew] 是一個專門安裝與管理多重 PHP 版本的工具。它在應用程式或專案 PHP 版本需求不同的情況下會非常有用，讓你不再需要使用虛擬機器處理這種情況。
 
