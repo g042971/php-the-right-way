@@ -27,6 +27,7 @@
 2. 使用 4 個空白來縮進排版文字，請不要使用 tabs。
 3. 每 120 字元請換行。
 4. 範例程式碼請遵照 PSR-1 以上的規範。
+5. 繁體中文翻譯請遵守 [Chinese Copywriting Guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)
 
 ## 哪裡取得
 
