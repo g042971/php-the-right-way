@@ -1,5 +1,7 @@
 # PHP 之道
 
+翻譯完成文件: http://laravel-taiwan.github.io/php-the-right-way/
+
 ## 概覽
 
 這是 _PHP 之道_ 專案的 GitHub Pages 源庫。
