@@ -3,22 +3,18 @@ isChild: true
 anchor: building_and_deploying_your_application
 ---
 
-## Building and Deploying your Application {#building_and_deploying_your_application_title}
+## 建立及部署應用程式 {#building_and_deploying_your_application_title}
 
-If you find yourself doing manual database schema changes or running your tests manually before updating your files 
-(manually), think twice! With every additional manual task needed to deploy a new version of your app, the chances for 
-potentially fatal mistakes increase. Whether you're dealing with a simple update, a comprehensive build process or 
-even a continuous integration strategy, [build automation](http://en.wikipedia.org/wiki/Build_automation) is your 
-friend.
+如果你發現自己在（手動）上傳檔案前，需要手動處理資料庫 schema 改變，或是手動執行測試，先想一想！在更新版本時，每個額外的人工部署任務都會增加嚴重錯誤的可能性。當你進行簡單的更新時，或是建構網站，或是持續整合（ continuous integration ）策略， [自動化部署](http://en.wikipedia.org/wiki/Build_automation) 會是你的好朋友。
 
-Among the tasks you might want to automate are:
+你可能會想要自動化的任務有：
 
-* Dependency management
-* Compilation, minification of your assets
-* Running tests
-* Creation of documentation
-* Packaging
-* Deployment
+* 相依性管理
+* 編譯，最小化 assets
+* 執行測試
+* 建立文件
+* 打包 
+* 部署 
 
 
 ### Build Automation Tools

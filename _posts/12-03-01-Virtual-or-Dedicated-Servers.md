@@ -3,27 +3,27 @@ isChild: true
 anchor: virtual_or_dedicated_servers
 ---
 
-## Virtual or Dedicated Servers {#virtual_or_dedicated_servers_title}
+## 虛擬或自架伺服器 {#virtual_or_dedicated_servers_title}
 
-If you are comfortable with systems administration, or are interested in learning it, virtual or dedicated servers give you complete control of your application's production environment.
+如果你傾向自己管理系統，或是有興趣學習，虛擬或自己的伺服器環境可以讓你自己控制應用程式的上線環境。
 
-### nginx and PHP-FPM
+### nginx 和 PHP-FPM
 
-PHP, via PHP's built-in FastCGI Process Manager (FPM), pairs really nicely with [nginx](http://nginx.org), which is a lightweight, high-performance web server. It uses less memory than Apache and can better handle more concurrent requests. This is especially important on virtual servers that don't have much memory to spare.
+PHP 透過內建的 FastCGI Process Manager（ FPM ），可以和 [nginx](http://nginx.org) 搭配的很好（ nginx 是個輕量，高效能的伺服器）。它比 Apache 消耗更少的記憶體，且可以處理更多並行請求。這在沒有太多記憶體空間可用虛擬機器裡尤其重要。
 
-* [Read more on nginx](http://nginx.org)
-* [Read more on PHP-FPM](http://php.net/manual/en/install.fpm.php)
-* [Read more on setting up nginx and PHP-FPM securely](https://nealpoole.com/blog/2011/04/setting-up-php-fastcgi-and-nginx-dont-trust-the-tutorials-check-your-configuration/)
+* [更多關於 nginx](http://nginx.org)
+* [更多關於 PHP-FPM](http://php.net/manual/en/install.fpm.php)
+* [關於安全設置 nginx 和 PHP-FPM](https://nealpoole.com/blog/2011/04/setting-up-php-fastcgi-and-nginx-dont-trust-the-tutorials-check-your-configuration/)
 
-### Apache and PHP
+### Apache 和 PHP
 
-PHP and Apache have a long history together. Apache is wildly configurable and has many available [modules](http://httpd.apache.org/docs/2.4/mod/) to extend functionality. It is a popular choice for shared servers and an easy setup for PHP frameworks and open source apps like WordPress. Unfortunately, Apache uses more resources than nginx by default and cannot handle as many visitors at the same time.
+PHP 和 Apache 的搭配使用已經蠻久了， Apache 可以進行高度客製並且有很多[模組](http://httpd.apache.org/docs/2.4/mod/) 可以擴展功能。對於共享伺服器，或想簡單設置 PHP 框架，以及使用開源程式像 WordPress，它是個流行的選擇。不幸的是， Apache 先天上要比 nginx 耗費更多資源並且不能同時應對更多的使用者。
 
-Apache has several possible configurations for running PHP. The most common and easiest to setup is the [prefork MPM](http://httpd.apache.org/docs/2.4/mod/prefork.html) with mod_php5. While it isn't the most memory efficient, it is the simplest to get working and to use. This is probably the best choice if you don't want to dig too deeply into the server administration aspects.  Note that if you use mod_php5 you MUST use the prefork MPM.
+Apache 有很多設定方式可以執行 PHP 。最普遍且最簡單的設置方式是使用 [prefork MPM](http://httpd.apache.org/docs/2.4/mod/prefork.html) 加上 mod_php5 。雖然它不是對記憶體最高效的方式，但它是最簡單使用的方式。如果你不想在伺服器系統管理方面太過深入，這可能是最好的選擇。注意如果你使用 mod_php5 ，你也必須使用 prefork MPM。
 
-Alternatively, if you want to squeeze more performance and stability out of Apache then you can take advantage of the same FPM system as nginx and run the [worker MPM](http://httpd.apache.org/docs/2.4/mod/worker.html) or [event MPM](http://httpd.apache.org/docs/2.4/mod/event.html) with mod_fastcgi or mod_fcgid. This configuration will be significantly more memory efficient and much faster but it is more work to set up.
+另外，如果你想讓 Apache 有更好的效能和更多的穩定性，那麼可以使用像是 nginx FPM 的 [worker MPM](http://httpd.apache.org/docs/2.4/mod/worker.html) 或是 [event MPM](http://httpd.apache.org/docs/2.4/mod/event.html) 搭配 mod_fastcgi 或 mod_fcgid 。兩者在設定上對於記憶體使用更為高效並且更快，但是設定上需要花更多功夫。
 
-* [Read more on Apache](http://httpd.apache.org/)
-* [Read more on Multi-Processing Modules](http://httpd.apache.org/docs/2.4/mod/mpm_common.html)
-* [Read more on mod_fastcgi](http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html)
-* [Read more on mod_fcgid](http://httpd.apache.org/mod_fcgid/)
+* [更多關於 Apache](http://httpd.apache.org/)
+* [更多關於 Multi-Processing Modules](http://httpd.apache.org/docs/2.4/mod/mpm_common.html)
+* [更多關於 mod_fastcgi](http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html)
+* [更多關於 mod_fcgid](http://httpd.apache.org/mod_fcgid/)

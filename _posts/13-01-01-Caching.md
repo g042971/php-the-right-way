@@ -2,7 +2,6 @@
 anchor: caching
 ---
 
-# Caching {#caching_title}
+# 快取 {#caching_title}
 
-PHP is pretty quick by itself, but bottlenecks can arise when you make remote connections, load files, etc. 
-Thankfully, there are various tools available to speed up certain parts of your application, or reduce the number of times these various time-consuming tasks need to run.
+PHP 本身非常快速，但是在遇到諸如遠端連線，載入檔案時會有瓶頸。好佳在，有很多工具可以加速這些部分的處理，或是減少進行這些耗時任務的次數。
