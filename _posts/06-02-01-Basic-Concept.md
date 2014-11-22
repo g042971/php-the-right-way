@@ -3,13 +3,13 @@ isChild: true
 anchor: basic_concept
 ---
 
-## 基本概念 {#basic_concept_title}
+## Basic Concept {#basic_concept_title}
 
-我們可以用一個簡單而樸實的例子來說明這個概念。
+We can demonstrate the concept with a simple, yet naive example.
 
-這裡我們有一個 `Database` 類別它需要個配接器來跟資料庫溝通。
-我們在建構式實例化配接器並建立寫死的依賴關係。
-這使得測試困難並意味 `Database` 類別跟配接器有非常緊密地耦合。
+Here we have a `Database` class that requires an adapter to speak to the database. We instantiate the
+adapter in the constructor and create a hard dependency. This makes testing difficult and means the `Database` class is
+very tightly coupled to the adapter.
 
 {% highlight php %}
 <?php
@@ -28,7 +28,7 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-這段程式碼可以用依賴注入重構並因此鬆開了依賴關係。
+This code can be refactored to use Dependency Injection and therefore loosen the dependency.
 
 {% highlight php %}
 <?php
@@ -47,5 +47,6 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-現在我們給 `Database` 類別它的依賴關係而不是它自己建立依賴關係。 我們可以建立
-接受一個依賴關係參數的方法並用這個方法設定它，或者 `$adapter` 屬性是 `public` 我們可以直接設定它。
+Now we are giving the `Database` class its dependency rather than it creating it itself. We could even create a method
+that would accept an argument of the dependency and set it that way, or if the `$adapter` property was `public` we could
+set it directly.
