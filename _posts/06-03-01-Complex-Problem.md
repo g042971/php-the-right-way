@@ -3,29 +3,25 @@ isChild: true
 anchor: complex_problem
 ---
 
-## Complex Problem {#complex_problem_title}
+## 複雜的問題 {#complex_problem_title}
 
-If you have ever read about Dependency Injection then you have probably seen the terms *"Inversion of Control"* or *"Dependency Inversion Principle"*.
-These are the complex problems that Dependency Injection solves.
+如果你曾經讀過依賴注入，那你可能已經看過 *"控制反轉"* 或 *"依賴反轉原則"* 這詞彙。
+這些都是依賴注入解決的複雜問題。
 
-### Inversion of Control
+### 控制反轉
 
-Inversion of Control is as it says, "inverting the control" of a system by keeping organisational control entirely separate from our objects.
-In terms of Dependency Injection, this means loosening our dependencies by controlling and instantiating them elsewhere in the system.
+控制反轉就像字面上說的，藉由維持組織的控制從我們的物件完全地分離來「反向控制」一個系統。
+從依賴注入的觀點看，這意味藉由在系統別處控制和實例化它們，鬆開依賴關係。
 
-For years, PHP frameworks have been achieving Inversion of Control, however, the question became, which part of control
-are you inverting, and where to? For example, MVC frameworks would generally provide a super object or base controller that other
-controllers must extend to gain access to its dependencies. This **is** Inversion of Control, however, instead of loosening
-dependencies, this method simply moved them.
+多年來，PHP 框架已經實現了控制反轉，然而，問題變成，你要反向控制哪個部分、在哪控制？ 舉個例子，MVC 框架通常會提供一個超級物件或基底控制器，其他控制器必須繼承它以取用它的依賴關係。 這 **就是** 控制反轉，然而，這個方法簡單地搬移它們，而不是鬆開依賴關係。
 
-Dependency Injection allows us to more elegantly solve this problem by only injecting the dependencies we need, when we need them,
-without the need for any hard coded dependencies at all.
+依賴注入讓我們藉由在我們需要的時候只注入我們需要的依賴關係，更優雅地解決這個問題，
+完全不需要任何寫死的依賴關係。
 
-### Dependency Inversion Principle
+### 依賴反轉原則
 
-Dependency Inversion Principle is the "D" in the S.O.L.I.D set of object oriented design principles that states one should
-*"Depend on Abstractions. Do not depend on concretions."*. Put simply, this means our dependencies should be interfaces/contracts or abstract
-classes rather than concrete implementations. We can easily refactor the above example to follow this principle.
+依賴反轉原則是物件導向設計原則的 S.O.L.I.D 集合中的「D」，它陳述應該
+*"依賴於抽象。 而不要依賴於實例"*。 簡單的說，這意味著我們的依賴關係應該是介面/契約或抽象類別而不是具體的實作。 我們可以簡單地重構上面的例子來遵循這個原則。
 
 {% highlight php %}
 <?php
@@ -46,12 +42,10 @@ interface AdapterInterface {}
 class MysqlAdapter implements AdapterInterface {}
 {% endhighlight %}
 
-There are several benefits to the `Database` class now depending on an interface rather than a concretion.
+`Database` 類別現在依賴於介面而不是實例有幾個好處。
 
-Consider that you are working in a team and the adapter is being worked on by a colleague. In our first example, we would have
-to wait for said colleague to finish the adapter before we could properly mock it for our unit tests. Now that the dependency
-is an interface/contract we can happily mock that interface knowing that our colleague will build the adapter based on that contract.
+試想，你在一個團隊中工作並且配接器是由同事動工。 在我們的第一個例子中，在可以適當地在單元測試中模擬它之前，我們必須等待同事完成配接器。 現在，依賴關係是個
+介面/契約，因為我們知道同事將會基於那個契約來做配接器，我們可以快樂地模擬那個介面。
 
-An even bigger benefit to this method is that our code is now much more scalable. If a year down the line we decide that we
-want to migrate to a different type of database, we can write an adapter that implements the original interface and inject that instead,
-no more refactoring would be required as we can ensure that the adapter follows the contract set by the interface.
+這個方法有一個更大的好處是我們的程式碼現在變成更可擴展的。 如果一年下來我們終究決定想要遷移到一個不同種類的資料庫，我們可以寫一個實作原本介面的配接器並注入它來取代，
+當我們可以確保配接器藉由介面遵守契約規定，就不再需要一直重構了。
