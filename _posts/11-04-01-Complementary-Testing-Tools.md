@@ -3,12 +3,12 @@ isChild: true
 anchor: complementary_testing_tools
 ---
 
-## Complementary Testing Tools {#complementary_testing_tools_title}
+## 其他測試工具 {#complementary_testing_tools_title}
 
-Besides individual testing and behavior driven frameworks, there are also a number of generic frameworks and helper libraries useful for any preferred approach taken.
+除了個別的測試驅動和行為驅動框架之外，還有一些通用的框架和輔助函式庫，對任何的測試方法都很有用。
 
-### Tool Links
+### 工具的超連結
 
-* [Selenium](http://seleniumhq.org/) is a browser automation tool which can be [integrated with PHPUnit](http://phpunit.de/manual/current/en/selenium.html)
-* [Mockery](https://github.com/padraic/mockery) is a Mock Object Framework which can be integrated with [PHPUnit](http://phpunit.de/) or [PHPSpec](http://www.phpspec.net/)
-* [Prophecy](https://github.com/phpspec/prophecy) is a highly opinionated yet very powerful and flexible PHP object mocking framework. It's integrated with [PHPSpec](http://www.phpspec.net/) and can be used with [PHPUnit](http://phpunit.de/).
+* [Selenium](http://seleniumhq.org/) 是個瀏覽器自動化工具，可以 [跟 PHPUnit 整合](http://phpunit.de/manual/current/en/selenium.html)
+* [Mockery](https://github.com/padraic/mockery) 是個可以跟 [PHPUnit](http://phpunit.de/) 或 [PHPSpec](http://www.phpspec.net/) 整合的 Mock 物件框架
+* [Prophecy](https://github.com/phpspec/prophecy) 是個 有自己的想法，然而非常強大且靈活的 PHP 物件 mocking 框架。 它整合了 [PHPSpec](http://www.phpspec.net/) 並且可以跟 [PHPUnit](http://phpunit.de/) 一起使用。

@@ -3,33 +3,27 @@ isChild: true
 anchor: test_driven_development
 ---
 
-## Test Driven Development {#test_driven_development_title}
+## 測試驅動開發 {#test_driven_development_title}
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
+出自 [維基百科](http://en.wikipedia.org/wiki/Test-driven_development):
 
-> Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes a failing automated test case that defines a desired improvement or new function, then produces code to pass that test and finally refactors the new code to acceptable standards. Kent Beck, who is credited with having developed or 'rediscovered' the technique, stated in 2003 that TDD encourages simple designs and inspires confidence
+> 測試驅動開發 (TDD) 是個依賴不斷重複著非常短的開發週期來運作的軟體開發流程： 首先，開發者撰寫一個定義著期望的改善或是新函式的失敗自動測試案例，接著撰寫程式碼來使測試通過，並最終重構程式碼至可以接受的標準。 Kent Beck，被認為是開發或是 '重新發現' 這個技術的人，2003 年聲明 TDD 鼓勵了簡單的設計並提振了信心
 
-There are several different types of testing that you can do for your application
+你可以為你的應用程式做這一些不同種類的測試
 
-### Unit Testing
+### 單元測試
 
-Unit Testing is a programming approach to ensure functions, classes and methods are working as
-expected, from the point you build them all the way through the development cycle. By checking
-values going in and out of various functions and methods, you can make sure the internal logic is
-working correctly. By using Dependency Injection and building "mock" classes and stubs you can verify that dependencies are correctly used for even better test coverage.
+單元測試是個編程方法，用來確保函式、類別和方法如預期運作，從你建構它們開始持續到整個開發週期。 藉由檢查每個函式和方法的
+輸入和輸出值，你可以確保內部邏輯正確地運作。 藉由使用依賴注入、建立 "mock" 類別和 stubs，你可以驗證依賴關係已經正確地建立，來提高測試涵蓋率。
 
-When you create a class or function you should create a unit test for each behavior it must have. At a very basic level you should
-make sure it errors if you send it bad arguments and make sure it works if you send it valid arguments.
-This will help ensure that when you make changes to this class or function later on in the development
-cycle that the old functionality continues to work as expected. The only alternative to this would be
-var_dump() in a test.php, which is no way to build an application - large or small.
+當你建立一個類別或函式，你應該為每一個它應該有的行為建立單元測試。 最基本你應該
+確保如果你傳遞錯誤的參數給它會發生錯誤，也確保如果你傳遞合法的參數給它會正確運作。
+在開發週期中，這能幫助確保當你之後修改這個類別或函式時，舊功能依然如預期運作。 唯一的替代方案是在 test.php 檔案裡面執行 var_dump()，但這沒有辦法建立一個應用程式 - 不論大的還是小的。
 
-The other use for unit tests is contributing to open source. If you can write a test that shows broken
-functionality (i.e. fails), then fix it, and show the test passing, patches are much more likely to be accepted. If
-you run a project which accepts pull requests then you should suggest this as a requirement.
+單元測試另外一個用處是在貢獻程式碼給開源專案的時候。 如果你可以寫個測試來展示功能壞掉 (就是失敗)，然後修復它，並展示測試通過，修補程式更可能會被接受。 如果你執行一個接受 pull requests 的專案，你應該建議這是一個要求。
 
-[PHPUnit](http://phpunit.de) is the de-facto testing framework for writing unit tests for PHP
-applications, but there are several alternatives
+[PHPUnit](http://phpunit.de) 是個為 PHP
+應用程式寫單元測試的主流測試框架，但是還有一些其他選擇
 
 * [atoum](https://github.com/atoum/atoum)
 * [Enhance PHP](https://github.com/Enhance-PHP/Enhance-PHP)
@@ -37,25 +31,22 @@ applications, but there are several alternatives
 * [SimpleTest](http://simpletest.org)
 
 
-### Integration Testing
+### 整合測試
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
+出自 [維基百科](http://en.wikipedia.org/wiki/Integration_testing):
 
-> Integration testing (sometimes called Integration and Testing, abbreviated "I&T") is the phase in software testing in which individual software modules are combined and tested as a group. It occurs after unit testing and before validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
+> 整合測試 (有時稱作整合和測試，縮寫「I&T」) 是結合個別軟體模組作為一個組合進行測試的軟體測試階段。 它處於單元測試之後和驗證測試之前。 整合測試拿已經做過單元測試的輸入模組，把它們聚集成比較大的項目，應用整合測試計畫來測試這些比較大的項目，並交付輸出整合的系統用來系統測試。
 
-Many of the same tools that can be used for unit testing can be used for integration testing as many
-of the same principles are used.
+因為使用許多同樣的原理，很多可以用來單元測試的工具也可以用來整合測試。
 
-### Functional Testing
+### 功能測試
 
-Sometimes also known as acceptance testing, functional testing consists of using tools to create automated
-tests that actually use your application instead of just verifying that individual units of code are behaving
-correctly and that individual units can speak to each other correctly. These tools typically work using real
-data and simulating actual users of the application.
+有時也被稱為驗收測試，功能測試使用工具來建立自動化的
+測試，並用真實的應用程式進行測試，而不只是驗證個別單元的程式碼運作正確或驗證個別單元可以跟其他單元正確地溝通。 這些工具通常使用真實的資料並模擬應用程式實際的使用者來測試。
 
-#### Functional Testing Tools
+#### 功能測試工具
 
 * [Selenium](http://seleniumhq.com)
 * [Mink](http://mink.behat.org)
-* [Codeception](http://codeception.com) is a full-stack testing framework that includes acceptance testing tools
-* [Storyplayer](http://datasift.github.io/storyplayer) is a full-stack testing framework that includes support for creating and destroying test environments on demand
+* [Codeception](http://codeception.com) 是個包含驗收測試工具的全端測試框架
+* [Storyplayer](http://datasift.github.io/storyplayer) 是個包含依照需求建立和破壞測試環境功能的全端測試框架
