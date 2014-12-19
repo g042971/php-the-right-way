@@ -3,22 +3,20 @@ isChild: true
 anchor: frameworks
 ---
 
-## Frameworks {#frameworks_title}
+## 框架 {#frameworks_title}
 
-Rather than re-invent the wheel, many PHP developers use frameworks to build out web applications. Frameworks abstract away many of the low-level concerns and provide helpful, easy-to-use interfaces to complete common tasks.
+許多的 PHP 開發者都使用框架，而不是重新造輪子來建構 Web 的應用程式。框架抽象掉許多底層常用的商業邏輯，並提供有益又簡便的方法來完成常見的任務。
 
-You do not need to use a framework for every project. Sometimes plain PHP is the right way to go, but if you do need a framework then there are three main types available:
+你並不一定要在每個專案都使用框架。有時原生的 PHP 才是正確的選擇，但如果你需要一個框架，那麼有三種主要類型可供使用：
 
-* Micro Frameworks
-* Full-Stack Frameworks
-* Component Frameworks
+* 微型框架
+* 大型框架
+* 套件框架
 
-Micro-frameworks are essentially a  wrapper to route a HTTP request to a callback, controller, method, etc as quickly as possible, and sometimes come with a few extra libraries to assist development such as basic database wrappers and the like. They are prominently used 
-to build remote HTTP services.
+微型框架基本上是一個包裝好的程式，並用來路由 HTTP 請求至一個回呼，控制器，或方法等等，盡可能地加快開發的速度，有時還能使用一些函式庫來幫助開發，例如一個基本的資料庫函式庫等等。他們卓越的用來建構 HTTP 的服務。
 
-Many frameworks add a considerable number of features on top of what is available in a micro-framework and these are known Full-Stack 
-Frameworks. These often come bundled with ORMs, Authentication packages, etc.
+許多的框架會在微型框架上加入相當多可用的功能，我們則稱之為大型框架。這些框架通常會提供 ORMs ，分份驗證套件等等。
 
-Component-based frameworks are collections of specialized and single-purpose libraries. Disparate component-based frameworks can be used together to make a micro- or full-stack framework.
+套件框架是多個獨立函式庫所結合起來的。不同的組件框架可以一起相容使用在微型或是大型框架。
 
-* [Popular PHP Frameworks](https://github.com/codeguy/php-the-right-way/wiki/Frameworks)
+* [熱門的 PHP 框架](https://github.com/codeguy/php-the-right-way/wiki/Frameworks)
