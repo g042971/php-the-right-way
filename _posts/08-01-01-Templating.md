@@ -1,12 +1,11 @@
 ---
-title: Templating
+title: 使用樣板
 anchor: templating
 ---
 
-# Templating {#templating_title}
+# 使用樣板 {#templating_title} 
+樣板提供簡便的方式，將展現邏輯從控制器與業務邏輯中分離出來。
 
-Templates provide a convenient way of separating your controller and domain logic from your presentation logic.
-Templates typically contain the HTML of your application, but may also be used for other formats, such as XML.
-Templates are often referred to as "views", which make up **part of** the second component of the
-[model–view–controller](http://www.phptherightway.com/pages/Design-Patterns.html#model-view-controller) (MVC)
-software architecture pattern.
+一般而言，樣板包含了應用程式的HTML，但也可以套用在其他的格式上，例如XML。
+
+樣板通常也被當作「視圖」, 而它是 [模型-視圖-控制器](http://www.phptherightway.com/pages/Design-Patterns.html#model-view-controller) (MVC) 軟體架構模式第二個元素的**一部份**。
