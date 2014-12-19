@@ -2,14 +2,14 @@
 anchor: resources
 ---
 
-# Resources {#resources_title}
+# 資源 {#resources_title}
 
-## From the Source
+## 從資源開始
 
 * [PHP Website](http://php.net/)
 * [PHP Documentation](http://php.net/docs.php)
 
-## People to Follow
+## 該關注的人
 
 * [Rasmus Lerdorf](http://twitter.com/rasmus)
 * [Fabien Potencier](http://twitter.com/fabpot)
@@ -21,11 +21,11 @@ anchor: resources
 * [Anthony Ferrara](http://twitter.com/ircmaxell)
 * [Nikita Popov](http://twitter.com/nikita_ppv)
 
-## Mentoring
+## 指導
 
-* [phpmentoring.org](http://phpmentoring.org/) - Formal, peer to peer mentoring in the PHP community.
+* [phpmentoring.org](http://phpmentoring.org/) - PHP 社群中的一對一指導。
 
-## PHP PaaS Providers
+## PHP 的 PaaS 提供商
 
 * [PagodaBox](https://pagodabox.com/)
 * [AppFog](https://appfog.com/)
