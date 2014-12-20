@@ -3,17 +3,17 @@ isChild: true
 anchor: password_hashing
 ---
 
-## Password Hashing {#password_hashing_title}
+## 密碼雜湊 {#password_hashing_title}
 
-Eventually everyone builds a PHP application that relies on user login. Usernames and passwords are stored in a database and later used to authenticate users upon login.
+每個人在建構 PHP 應用程式時終究會加入使用者登入的功能。使用者的帳號及密碼都會被儲存在資料庫，並在登入時使用該資料來驗證使用者。
 
-It is important that you properly [_hash_][3] passwords before storing them. Password hashing is an irreversible, one way function performed against the user's password. This produces a fixed-length string that cannot be feasibly reversed. This means you can compare a hash against another to determine if they both came from the same source string, but you cannot determine the original string. If passwords are not hashed and your database is accessed by an unauthorized third-party, all user accounts are now compromised. Some users may (unfortunately) use the same password for other services. Therefore, it is important to take security seriously.
+在寫入資料前正確的 [_雜湊_][3] 他們的密碼是相當重要的一件事。使用單向雜湊函式處理密碼可以產生不可逆的密碼雜湊，而該雜湊會是一段固定長度的字串且無法逆向演算出密碼。這就代表你可以雜湊另一組密碼，並比較兩者是否來自於同一組密碼，而且你無法得知原始的密碼。如果你不將密碼雜湊，那麼當未經授權的第三者進入你的資料庫時，所有使用者的帳號資料將會一覽無遺。有些使用者可能（很不幸的）在別的服務也使用相同的密碼，所以務必要重視資訊安全的問題。
 
-**Hashing passwords with `password_hash`**
+**使用 `password_hash` 來雜湊密碼**
 
-In PHP 5.5 `password_hash` was introduced. At this time it is using BCrypt, the strongest algorithm currently supported by PHP. It will be updated in the future to support more algorithms as needed though. The `password_compat` library was created to provide forward compatibility for PHP >= 5.3.7.
+`password_hash` 已經在 PHP 5.5 時加入。現在你可以使用目前 PHP 所支援的演算法中最強大的 BCrypt 。當然，未來支援更多的演算法時他就不見得會是最強的。 `password_compat` 函式庫的出現是為了提供 PHP >= 5.3.7 對舊版本的支援性。
 
-Below we hash a string, and then check the hash against a new string. Because our two source strings are different ('secret-password' vs. 'bad-password') this login will fail.
+在下面例子中，我們雜湊一組字串，然後和新的雜湊值做比對。因為我們使用的兩組字串是不同的（ 'secret-password' 與 'bad-password' ），所以理所當然的就登入失敗了。
 
 {% highlight php %}
 <?php
@@ -31,9 +31,9 @@ if (password_verify('bad-password', $passwordHash)) {
 
 
 
-* [Learn about `password_hash`] [1]
-* [`password_compat` for PHP  >= 5.3.7 && < 5.5] [2]
-* [Learn about hashing in regards to cryptography] [3]
+* [了解 `password_hash`] [1]
+* [PHP >= 5.3.7 && < 5.5 的 `password_compat`] [2]
+* [了解密碼學中的雜湊] [3]
 * [PHP `password_hash` RFC] [4]
 
 [1]: http://us2.php.net/manual/en/function.password-hash.php
