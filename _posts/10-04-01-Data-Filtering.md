@@ -11,7 +11,7 @@ anchor: data_filtering
 
 當外部輸入被儲存、合併，或是下次讀取，他們依然是外部輸入。每次在程式中處理、輸出、串接或是引入資料時，試著問你自己這些資料都已經過濾，而且可以被信任。
 
-根據資料使用的方式不同，就要進行不同的 _過濾_。例如當外部輸入未經過濾輸出到 HTML 頁面上時，他就可以在你的網站上執行 HTML 及 JavaScript ！這就是我們所知道的跨網站指令碼（ Cross-site scripting ， 又稱為 XSS ），這是一個相當危險的攻擊手法。避免 XSS 的其中一個方式就是使用 `strip_tags` 函式來過濾外部輸入的所有 HTML 標籤，另外也可以使用 `htmlentities` 或 `htmlspecialchars` 函式將特定字元替換成 HTML 的實體符號。
+根據資料使用的方式不同，就要進行不同的_過濾_。例如當外部輸入未經過濾輸出到 HTML 頁面上時，他就可以在你的網站上執行 HTML 及 JavaScript ！這就是我們所知道的跨網站指令碼（ Cross-site scripting ， 又稱為 XSS ），這是一個相當危險的攻擊手法。避免 XSS 的其中一個方式就是使用 `strip_tags` 函式來過濾外部輸入的所有 HTML 標籤，另外也可以使用 `htmlentities` 或 `htmlspecialchars` 函式將特定字元替換成 HTML 的實體符號。
 
 另一個例子是傳遞給終端機執行的選項，這是相當危險的一件事（而且通常是個爛主意），不過你可以使用內建的 `escapeshellarg` 函式來過濾執行終端機的參數。
 
@@ -24,7 +24,7 @@ anchor: data_filtering
 
 ### 淨化
 
-淨化就是刪除（或是跳脫）外部輸入不合法或是不安全的字元。Sanitization removes (or escapes) illegal or unsafe characters from foreign input.
+淨化就是刪除（或是跳脫）外部輸入不合法或是不安全的字元。
 
 例如，在將外部輸入的字元輸出至 HTML 或是插入到SQL的查詢前淨化外部輸入。當你使用 [PDO](#databases) 綁定參數時，他會為你淨化輸入的資料。
 
