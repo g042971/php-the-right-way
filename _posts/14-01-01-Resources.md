@@ -1,4 +1,5 @@
 ---
+title: 資源
 anchor: resources
 ---
 

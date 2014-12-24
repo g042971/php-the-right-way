@@ -1,5 +1,6 @@
 ---
 isChild: true
+title: 命名空間
 anchor: namespaces
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: 快取 
 anchor: caching
 ---
 

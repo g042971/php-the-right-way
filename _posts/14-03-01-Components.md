@@ -1,5 +1,6 @@
 ---
 isChild: true
+title: 套件
 anchor: components
 ---
 

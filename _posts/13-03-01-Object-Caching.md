@@ -1,5 +1,6 @@
 ---
 isChild: true
+title: 物件快取
 anchor: object_caching
 ---
 

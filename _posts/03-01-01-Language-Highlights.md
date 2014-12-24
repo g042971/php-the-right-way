@@ -1,4 +1,5 @@
 ---
+title: 語法高亮
 anchor: language_highlights
 ---
 

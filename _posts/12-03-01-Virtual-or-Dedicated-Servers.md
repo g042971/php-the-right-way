@@ -1,5 +1,6 @@
 ---
 isChild: true
+title: 虛擬或自架伺服器 
 anchor: virtual_or_dedicated_servers
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: 入門指南
 anchor: getting_started
 ---
 
