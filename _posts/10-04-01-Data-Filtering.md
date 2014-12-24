@@ -3,62 +3,40 @@ isChild: true
 anchor: data_filtering
 ---
 
-## Data Filtering {#data_filtering_title}
+## 資料過濾 {#data_filtering_title}
 
-Never ever (ever) trust foreign input introduced to your PHP code. Always sanitize and validate
-foreign input before using it in code. The `filter_var` and `filter_input` functions can sanitize text and validate text formats (e.g.
-email addresses).
+絕對（永遠）不要在 PHP 程式相信外部輸入。每次在程式中使用外部輸入時務必要過濾及驗證。 `filter_var` 及 `filter_input` 函式可以過濾文字及驗證文字的格式（例如 Email ）。
 
-Foreign input can be anything: `$_GET` and `$_POST` form input data, some values in the `$_SERVER`
-superglobal, and the HTTP request body via `fopen('php://input', 'r')`. Remember, foreign input is not
-limited to form data submitted by the user. Uploaded and downloaded files, session values, cookie data,
-and data from third-party web services are foreign input, too.
+外部輸入可以是：由表單輸入的 `$_GET` 及 `$_POST` ，還有 `$_SERVER` 超級全域變數，以及來自 `fopen('php://input', 'r')` 的 Http 請求。切記，外部輸入並不限定是使用者從表單填入的資料。上傳及下載的檔案， Session 值及 Cookie 資料，以及第三方 Web 服務提供的資料，均是外部輸入。
 
-While foreign data can be stored, combined, and accessed later, it is still foreign input. Every
-time you process, output, concatenate, or include data in your code, ask yourself if
-the data is filtered properly and can it be trusted.
+當外部輸入被儲存、合併，或是下次讀取，他們依然是外部輸入。每次在程式中處理、輸出、串接或是引入資料時，試著問你自己這些資料都已經過濾，而且可以被信任。
 
-Data may be _filtered_ differently based on its purpose. For example, when unfiltered foreign input is passed
-into HTML page output, it can execute HTML and JavaScript on your site! This is known as Cross-Site
-Scripting (XSS) and can be a very dangerous attack. One way to avoid XSS is to sanitize all user-generated
-data before outputting it to your page by removing HTML tags with the `strip_tags` function or escaping
-characters with special meaning into their respective HTML entities with the `htmlentities`
-or `htmlspecialchars` functions.
+根據資料使用的方式不同，就要進行不同的_過濾_。例如當外部輸入未經過濾輸出到 HTML 頁面上時，他就可以在你的網站上執行 HTML 及 JavaScript ！這就是我們所知道的跨網站指令碼（ Cross-site scripting ， 又稱為 XSS ），這是一個相當危險的攻擊手法。避免 XSS 的其中一個方式就是使用 `strip_tags` 函式來過濾外部輸入的所有 HTML 標籤，另外也可以使用 `htmlentities` 或 `htmlspecialchars` 函式將特定字元替換成 HTML 的實體符號。
 
-Another example is passing options to be executed on the command line. This can be extremely dangerous
-(and is usually a bad idea), but you can use the built-in `escapeshellarg` function to sanitize the executed
-command's arguments.
+另一個例子是傳遞給終端機執行的選項，這是相當危險的一件事（而且通常是個爛主意），不過你可以使用內建的 `escapeshellarg` 函式來過濾執行終端機的參數。
 
-One last example is accepting foreign input to determine a file to load from the filesystem. This can be exploited by
-changing the filename to a file path. You need to remove "/", "../", [null bytes][6], or other characters from the file path so it can't
-load hidden, non-public, or sensitive files.
+最後一個例子就是根據外部輸入從檔案系統載入檔案，該動作可以透過修檔案名稱或是路徑來攻擊。你必須移除外部輸入的 "/" ， "../" ， [空字元][6] 或是其他檔案路徑的字元，這樣就可以避免載入隱密，非公開或是敏感的檔案。
 
-* [Learn about data filtering][1]
-* [Learn about `filter_var`][4]
-* [Learn about `filter_input`][5]
-* [Learn about handling null bytes][6]
+* [了解資料過濾][1]
+* [了解 `filter_var`][4]
+* [了解 `filter_input`][5]
+* [了解空字元的處理][6]
 
-### Sanitization
+### 淨化
 
-Sanitization removes (or escapes) illegal or unsafe characters from foreign input.
+淨化就是刪除（或是跳脫）外部輸入不合法或是不安全的字元。
 
-For example, you should sanitize foreign input before including the input in HTML or inserting it
-into a raw SQL query. When you use bound parameters with [PDO](#databases), it will
-sanitize the input for you.
+例如，在將外部輸入的字元輸出至 HTML 或是插入到SQL的查詢前淨化外部輸入。當你使用 [PDO](#databases) 綁定參數時，他會為你淨化輸入的資料。
 
-Sometimes it is required to allow some safe HTML tags in the input when including it in the HTML
-page. This is very hard to do and many avoid it by using other more restricted formatting like
-Markdown or BBCode, although whitelisting libraries like [HTML Purifier][html-purifier] exists for
-this reason.
+有時需要允許外部輸入包含某些安全的 HTML 標籤，並輸出至HTML頁面上。這是很難做到的，可以試著使用其他限制較嚴格的格式，例如 Markdown 或 BBCode 。如果真的窮途末路了，可以使用 [HTML Purifier][html-purifier] 來進行淨化。
 
-[See Sanitization Filters][2]
+[查閱淨化過濾][2]
 
-### Validation
+### 驗證
 
-Validation ensures that foreign input is what you expect. For example, you may want to validate an
-email address, a phone number, or age when processing a registration submission.
+驗證可以確保外部輸入是你所期望的資料。例如，你可能需要在處理註冊帳號時驗證Email，電話號碼或年齡。
 
-[See Validation Filters][3]
+[查閱驗證過濾][3]
 
 [1]: http://www.php.net/manual/en/book.filter.php
 [2]: http://www.php.net/manual/en/filter.filters.sanitize.php

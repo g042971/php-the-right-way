@@ -3,14 +3,10 @@ isChild: true
 anchor: configuration_files
 ---
 
-## Configuration Files {#configuration_files_title}
+## 設定檔 {#configuration_files_title}
 
-When creating configuration files for your applications, best practices recommend that one of the following methods 
-be followed:
+當你的應用程式建立設定檔時，建議遵照以下最佳實踐：
 
-- It is recommended that you store your configuration information where it cannot be accessed directly and pulled in 
-via the file system.
-- If you must store your configuration files in the document root, name the files with a `.php` extension. This 
-ensures that, even if the script is accessed directly, it will not be output as plain text.
-- Information in configuration files should be protected accordingly, either through encryption or group/user file 
-system permissions
+- 設定檔應該儲存在 Web 不能直接存取及上傳的檔案目錄中
+- 如果設定檔只能放在文件的根目錄，請使用 `.php` 作為檔案的副檔名。這樣可以確保即使檔案被直接存取，內容也不會被當作純文字輸出。
+- 通過加密或是調整檔案系統權限讓設定檔的內容應該得到應有的保護。

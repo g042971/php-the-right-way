@@ -3,16 +3,13 @@ isChild: true
 anchor: register_globals
 ---
 
-## Register Globals {#register_globals_title}
+## 註冊全域變數 {#register_globals_title}
 
-**NOTE:** As of PHP 5.4.0 the `register_globals` setting has been removed and can no 
-longer be used. This is only included as a warning for anyone in the process of upgrading a legacy application.
+**注意:** 從 PHP 5.4.0 開始， `register_globals` 的設定已經被移除且不再被支援。如果你還保留這個設定，就意味著你該更新你的應用程式了。
 
-When enabled, the `register_globals` configuration setting that makes several types of variables (including ones from 
-`$_POST`, `$_GET` and `$_REQUEST`) available in the global scope of your application. This can easily lead to 
-security issues as your application cannot effectively tell where the data is coming from.
+當開啟 `register_globals` 設定時，`$_POST` ， `$_GET` 及 `$_REQUEST` 中的變數會自動註冊為全域變數，此時你的應用程式將無法辨識資料的原始來源，導致相當容易產生安全的漏洞。
 
-For example: `$_GET['foo']` would be available via `$foo`, which can override variables that have not been declared. 
-If you are using PHP < 5.4.0 __make sure__ that `register_globals` is __off__.
+例如: `$_GET['foo']` 會被註冊為全域變數 `$foo` ，他將會覆蓋掉程式中未定義的變數。
+如果你的使用的 PHP < 5.4.0 ，請__再三確認__已經把 `register_globals` 給__關閉__。
 
-* [Register_globals in the PHP manual](http://www.php.net/manual/en/security.globals.php)
+* [在 PHP manual 中了解註冊 _globals](http://www.php.net/manual/en/security.globals.php)

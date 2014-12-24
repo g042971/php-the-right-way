@@ -3,12 +3,11 @@ isChild: true
 anchor: web_application_security
 ---
 
-## Web Application Security {#web_application_security_title}
+## Web 應用程式安全 {#web_application_security_title}
 
-There are bad people ready and willing to exploit your web application. It is important that you
- take necessary precautions to harden your web application's security. Luckily, the fine folks at [The Open Web Application Security Project][1] (OWASP) have compiled a comprehensive list of known security issues and methods to protect yourself against them. This is a must read for the security-conscious developer.
+總是有些不懷好意的人想鑽你 Web 應用程式的漏洞，所以採取一些必要的防範措施來強化 Web 應用程式的安全性是相當重要的。很幸運的， [The Open Web Application Security Project][1] (OWASP) 已經整理一份相當詳細的資安列表以及防範的對策。如果你是一個有資安意識的開發者，那麼就必須詳細的閱讀它。
 
-* [Read the OWASP Security Guide][2]
+* [查閱 OWASP 安全指南][2]
 
 [1]: https://www.owasp.org/
 [2]: https://www.owasp.org/index.php/Guide_Table_of_Contents
