@@ -3,7 +3,7 @@ isChild: true
 anchor: error_reporting
 ---
 
-## Error Reporting {#error_reporting_title}
+## 錯誤報告 {#error_reporting_title}
 
 Error logging can be useful in finding the problem spots in your application, but it can also expose information about 
 the structure of your application to the outside world. To effectively protect your application from issues that could 
@@ -28,11 +28,11 @@ use either `-1` or `E_ALL | E_STRICT`.
 
 **Reporting every possible error by PHP version**
 
-* &lt; 5.3 `-1` or `E_ALL`
-* &nbsp; 5.3 `-1` or `E_ALL | E_STRICT`
-* &gt; 5.3 `-1` or `E_ALL`
+* &lt; 5.3 `-1` 或 `E_ALL`
+* &nbsp; 5.3 `-1` 或 `E_ALL | E_STRICT`
+* &gt; 5.3 `-1` 或 `E_ALL`
 
-### Production
+### 線上環境
 
 To hide errors on your <strong>production</strong> environment, configure your `php.ini` as:
 
