@@ -1,6 +1,6 @@
 ---
-title: Platform as a Service (PaaS)
 isChild: true
+title: Platform as a Service (PaaS)
 anchor: platform_as_a_service
 ---
 

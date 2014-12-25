@@ -1,6 +1,6 @@
 ---
-title:   標準 PHP 函式庫
 isChild: true
+title:   標準 PHP 函式庫
 anchor: standard_php_library
 ---
 

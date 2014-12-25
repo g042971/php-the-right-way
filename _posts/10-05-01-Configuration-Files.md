@@ -1,5 +1,6 @@
 ---
 isChild: true
+title: 設定檔
 anchor: configuration_files
 ---
 
