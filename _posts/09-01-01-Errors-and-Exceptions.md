@@ -1,7 +1,7 @@
 ---
-title: Errors and Exceptions
+title: 錯誤與例外
 anchor: errors_and_exceptions
 ---
 
-# Errors and Exceptions {#errors_and_exceptions_title}
+# 錯誤與例外 {#errors_and_exceptions_title}
 
