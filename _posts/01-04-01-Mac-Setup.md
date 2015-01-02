@@ -32,7 +32,6 @@ OSX 會預載 PHP 在系統中，但版本略舊於最新的穩定版本。Lion 
 [Homebrew PHP]: https://github.com/Homebrew/homebrew-php#installation
 [mac-compile]: http://www.php.net/manual/en/install.macosx.compile.php
 [xcode-gcc-substitution]: https://github.com/kennethreitz/osx-gcc-installer
-
 ["Command Line Tools for XCode"]: https://developer.apple.com/downloads
 [mamp-downloads]: http://www.mamp.info/en/downloads/
 [phpbrew]: https://github.com/phpbrew/phpbrew
