@@ -1,4 +1,4 @@
-# 歡迎 {#site-header} 
+# 歡迎 {#site-header}
 
 目前網路上充斥著大量的過時信息，讓 PHP 新手誤入歧途，並且傳播著錯誤的實踐方法與不安全的代碼。
 _PHP 之道_ 是一個快速易讀的指南，包含 PHP 熱門編碼標準、連結網路上權威教程和現時貢獻者認定的最佳實踐方法。
@@ -43,5 +43,5 @@ _PHP 之道_ 已經（或即將）翻譯成多種語言：
 
 [廣告橫幅][2]
 
-[1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
+[1]: https://github.com/laravel-taiwan/php-the-right-way
 [2]: /banners.html
