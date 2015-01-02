@@ -33,7 +33,7 @@ catch(Fuel\Email\SendingFailedException $e)
 }
 finally
 {
-    // 無論丟出什麼樣的例外都會執行，並且在正常程序繼續之前執行 
+    // 無論丟出什麼樣的例外都會執行，並且在正常程序繼續之前執行
 }
 {% endhighlight %}
 

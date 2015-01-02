@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 基礎知識 
+title: 基礎知識
 anchor: the_basics
 ---
 

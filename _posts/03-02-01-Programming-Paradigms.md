@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 編程範式  
+title: 編程範式
 anchor: programming_paradigms
 ---
 

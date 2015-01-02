@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 延伸閱讀 
+title: 延伸閱讀
 anchor: further_reading
 ---
 

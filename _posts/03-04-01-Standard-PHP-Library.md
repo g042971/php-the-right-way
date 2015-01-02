@@ -10,4 +10,4 @@ anchor: standard_php_library
 
 * [閱讀 SPL][spl]
 
-[spl]: http://php.net/manual/en/book.spl.php 
+[spl]: http://php.net/manual/en/book.spl.php

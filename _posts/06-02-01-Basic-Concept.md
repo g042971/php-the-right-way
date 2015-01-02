@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 基本概念 
+title: 基本概念
 anchor: basic_concept
 ---
 

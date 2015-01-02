@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: Composer 與 Packagist 
+title: Composer 與 Packagist
 anchor: composer_and_packagist
 ---
 

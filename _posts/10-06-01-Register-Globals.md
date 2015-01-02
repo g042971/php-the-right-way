@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 註冊全域變數 
+title: 註冊全域變數
 anchor: register_globals
 ---
 

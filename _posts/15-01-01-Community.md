@@ -1,6 +1,6 @@
 ---
 title: 社群
-anchor: community 
+anchor: community
 ---
 
 # 社群 {#community_title}

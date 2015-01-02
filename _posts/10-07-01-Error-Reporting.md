@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 錯誤報告 
+title: 錯誤報告
 anchor: error_reporting
 ---
 

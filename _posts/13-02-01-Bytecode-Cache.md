@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: Bytecode 快取  
+title: Bytecode 快取
 anchor: bytecode_cache
 ---
 

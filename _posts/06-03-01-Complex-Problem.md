@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 複雜的問題 
+title: 複雜的問題
 anchor: complex_problem
 ---
 

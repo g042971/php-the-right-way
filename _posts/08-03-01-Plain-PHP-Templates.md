@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: 原生 PHP 樣板 
+title: 原生 PHP 樣板
 anchor: plain_php_templates
 ---
 
