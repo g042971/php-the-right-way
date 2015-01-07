@@ -6,7 +6,7 @@ anchor: components
 
 ## 套件 {#components_title}
 
-正如同標題提到，「套件」是另一種創建，發布及推動開源碼的方式。現在存在著各種的套件庫，其中最主要的兩個為：
+正如同標題提到，「套件」是另一種建立，發布及推動開源碼的方式。現在存在著各種的套件庫，其中最主要的兩個為：
 
 * [Packagist](/#composer_and_packagist)
 * [PEAR](/#pear)
