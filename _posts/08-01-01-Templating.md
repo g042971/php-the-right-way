@@ -8,4 +8,4 @@ anchor: templating
 
 一般而言，樣板包含了應用程式的HTML，但也可以套用在其他的格式上，例如XML。
 
-樣板通常也被當作「視圖」, 而它是 [模型-視圖-控制器](http://www.phptherightway.com/pages/Design-Patterns.html#model-view-controller) (MVC) 軟體架構模式第二個元素的**一部份**。
+樣板通常也被當作「視圖」, 而它是 [模型-視圖-控制器](pages/Design-Patterns.html#model-view-controller) (MVC) 軟體架構模式第二個元素的**一部份**。
