@@ -9,7 +9,7 @@ anchor: basic_concept
 我們可以用一個簡單而樸實的例子來說明這個概念。
 
 這裡我們有一個 `Database` 類別它需要個配接器來跟資料庫溝通。
-我們在建構式實例化配接器並建立寫死的依賴關係。
+我們在建構式實例化配接器並建立寫死的相依關係。
 這使得測試困難並意味 `Database` 類別跟配接器有非常緊密地耦合。
 
 {% highlight php %}
@@ -29,7 +29,7 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-這段程式碼可以用依賴注入重構並因此鬆開了依賴關係。
+這段程式碼可以用依賴注入重構並因此鬆開了相依關係。
 
 {% highlight php %}
 <?php
@@ -48,5 +48,5 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-現在我們給 `Database` 類別它的依賴關係而不是它自己建立依賴關係。 我們可以建立
-接受一個依賴關係參數的方法並用這個方法設定它，或者 `$adapter` 屬性是 `public` 我們可以直接設定它。
+現在我們給 `Database` 類別它的相依關係而不是它自己建立相依關係。 我們可以建立
+接受一個相依關係參數的方法並用這個方法設定它，或者 `$adapter` 屬性是 `public` 我們可以直接設定它。
