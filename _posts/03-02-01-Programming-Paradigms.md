@@ -26,7 +26,7 @@ PHP 支援遞迴，也就是函式可以呼叫自己，但多數 PHP 程式碼�
 
 PHP 5.4 支援將閉包綁定到物件的作用域中，並改善其可調用性，如此即可在大部分狀況下使用匿名函式取代一般函式。
 
-* 學習更多 [PHP 函式編程](/pages/Functional-Programming.html)
+* 學習更多 [PHP 函式編程](pages/Functional-Programming.html)
 * [閱讀匿名函式][anonymous-functions]
 * [閱讀閉包類別][closure-class]
 * [更多關於 Closures RFC][closures-rfc]
