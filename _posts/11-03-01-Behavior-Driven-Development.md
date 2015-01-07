@@ -9,7 +9,7 @@ anchor: behavior_driven_development
 有兩種不同的行為驅動開發 (BDD)： SpecBDD 和 StoryBDD。 SpecBDD 專注於程式碼技術上的行為，而 StoryBDD 專注於商業或功能的行為和互動。 這兩種 BDD 都有 PHP 的框架。
 
 採用 StoryBDD 時，你撰寫人可以閱讀的故事來描述應用程式的行為。 接著這些故事
-可以作為應用程式的實際測試案例運行。 使用在 PHP 應用程式的 StoryBDD 框架
+可以作為應用程式的實際測試案例執行。 使用在 PHP 應用程式的 StoryBDD 框架
 是 Behat，它受到 Ruby 的 [Cucumber](http://cukes.info/) 專案啟發並實作了 Gherkin DSL
 來描述功能的行為。
 
