@@ -45,4 +45,4 @@ _PHP 之道_ 已經（或即將）翻譯成多種語言：
 [廣告橫幅][2]
 
 [1]: https://github.com/laravel-taiwan/php-the-right-way
-[2]: /banners.html
+[2]: /php-the-right-way/banners.html
