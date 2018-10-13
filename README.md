@@ -13,23 +13,23 @@
 
 ## 口耳相傳
 
-您可以在網站上放置 _PHP 之道_ 的廣告橫幅。謝謝您的支持，並讓 PHP 新手能夠知道哪裡可以找到好的資訊！
+您可以在網站上放置 _PHP 之道_ 的廣告橫幅。謝謝您的支持，讓 PHP 新手知道哪裡可以找到好的資訊！
 
 [廣告橫幅](http://laravel-taiwan.github.io/php-the-right-way/banners.html)
 
 ## 如何貢獻
 
-1. Fork 然後編輯
+1. Fork 然後編輯。
 2. 安裝 [Ruby](https://rvm.io/rvm/install/) 和 [Jekyll](https://github.com/mojombo/jekyll/) 在本地端預覽。
 3. 送出 Pull Request 供審閱。
 
-### 貢獻者樣式規範
+### 貢獻者風格指南
 
-1. 使用美式英文拼法 （*僅適用於英文 repo*)
-2. 使用 4 個空白來縮進排版文字，請不要使用 tabs。
+1. 使用美式英文拼法（*僅適用於英文 repo*）。
+2. 以 4 個空白縮進文字，請勿使用 Tab。
 3. 每 120 字元請換行。
-4. 範例程式碼請遵照 PSR-1 以上的規範。
-5. 繁體中文翻譯請遵守 [Chinese Copywriting Guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)
+4. 範例程式請遵照 PSR-1 以上的標準。
+5. 繁體中文翻譯請參考[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
 
 ## 哪裡取得
 
@@ -75,7 +75,7 @@
 
 最近在 PHP 社群中有大量的討論，對於 PHP 新手而言，缺少足夠且可靠的資訊。而此源庫就是為了解決此問題。
 
-## 誰創此專案
+## 誰創立此專案
 
 我的名字是 [Josh Lockhart](http://twitter.com/codeguy)。我是 [Slim Framework](http://www.slimframework.com/) 的作者並且在 [New Media Campaigns](http://www.newmediacampaigns.com/) 工作。
 
